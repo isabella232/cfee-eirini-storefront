@@ -1,5 +1,5 @@
-# CFEE Eirini Storefront backend
-A backend Cobol service providing a list of products used by the [frontend](https://github.com/IBM-Cloud/eirini-demo/tree/master/frontend). 
+# CFEE Eirini Storefront Backend
+A backend Cobol service providing a list of products used by the [frontend](https://github.com/IBM-Cloud/cfee-eirini-storefront/tree/master/frontend). 
 
 # Deploy the backend app to CFEE
 
@@ -13,10 +13,10 @@ A backend Cobol service providing a list of products used by the [frontend](http
    ```
 
 
-1. From your terminal, clone the [app](https://github.com/IBM-Cloud/eirini-demo) if you haven't already.
+1. From your terminal, clone the [app](https://github.com/IBM-Cloud/cfee-eirini-storefront) if you haven't already.
 
    ```bash
-   git clone https://github.com/IBM-Cloud/eirini-demo
+   git clone https://github.com/IBM-Cloud/cfee-eirini-storefront
    ```
 
 1. cd into the `backend` app.
@@ -50,11 +50,11 @@ A backend Cobol service providing a list of products used by the [frontend](http
 
 1. Deploy to your cluster.
 
-1. Done, next deploy the [frontend](https://github.com/IBM-Cloud/eirini-demo/tree/master/frontend). 
+1. Done, next deploy the [frontend](https://github.com/IBM-Cloud/cfee-eirini-storefront/tree/master/frontend). 
 
 # Issues
 
-If you have any question or doubt, please [create an issue](https://github.com/IBM-Cloud/eirini-demo/issues).
+If you have any question or doubt, please [create an issue](https://github.com/IBM-Cloud/cfee-eirini-storefront/issues).
 
 
 # License

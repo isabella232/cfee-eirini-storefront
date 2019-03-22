@@ -1,4 +1,4 @@
-# CFEE Eirini Storefront frontend
+# CFEE Eirini Storefront Frontend
 A frontend shopping cart site using Node.js - the app is talking to the backend to fetch the shopping cart products. If the connection with the backend Cobol app is not set then no products will be displayed. 
 
 # Deploy the app to CFEE
@@ -13,10 +13,10 @@ A frontend shopping cart site using Node.js - the app is talking to the backend 
 
 1. [Deploy a CFEE instance and create an org and space](https://cloud.ibm.com/docs/tutorials?topic=solution-tutorials-isolated-cloud-foundry-enterprise-apps) in CFEE, have your CFEE environment ready to deploy apps. **SKIP** this step if you already have a CFEE instance and ready to deploys apps.
 
-1. From your terminal, clone the [app](https://github.com/IBM-Cloud/eirini-demo) if you haven't already.
+1. From your terminal, clone the [app](https://github.com/IBM-Cloud/cfee-eirini-storefront) if you haven't already.
 
    ```bash
-   git clone https://github.com/IBM-Cloud/eirini-demo
+   git clone https://github.com/IBM-Cloud/cfee-eirini-storefront
    ```
 
 1. cd into the `frontend` app.
@@ -35,7 +35,7 @@ A frontend shopping cart site using Node.js - the app is talking to the backend 
 
 # Connect the frontend to the backend
 
-In this section, you will connect the frontend Cloud Foundry app to use the backend Kubernetes service. You must have deployed the [backend](https://github.com/IBM-Cloud/eirini-demo/tree/master/backend) before the steps below. 
+In this section, you will connect the frontend Cloud Foundry app to use the backend Kubernetes service. You must have deployed the [backend](https://github.com/IBM-Cloud/cfee-eirini-storefront/tree/master/backend) before the steps below. 
 
 1. Set the frontend env to use the backend service.
 
@@ -53,7 +53,7 @@ In this section, you will connect the frontend Cloud Foundry app to use the back
 
 # Issues
 
-If you have any question or doubt, please [create an issue](https://github.com/IBM-Cloud/eirini-demo/issues).
+If you have any question or doubt, please [create an issue](https://github.com/IBM-Cloud/cfee-eirini-storefront/issues).
 
 
 # License
