@@ -1,4 +1,4 @@
-# Eirini Demo
+# CFEE Eirini Storefront
 
 
 This repo consists of a [backend COBOL app](https://github.com/IBM-Cloud/eirini-demo/tree/master/backend) and a [frontend Node App](https://github.com/IBM-Cloud/eirini-demo/tree/master/frontend). The focus here is to understand how these two apps can be deployed and managed with one Cloud Foundry Enterprise Environment instance.

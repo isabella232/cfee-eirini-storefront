@@ -1,4 +1,4 @@
-# Eirini frontend
+# CFEE Eirini Storefront frontend
 A frontend shopping cart site using Node.js - the app is talking to the backend to fetch the shopping cart products. If the connection with the backend Cobol app is not set then no products will be displayed. 
 
 # Deploy the app to CFEE
