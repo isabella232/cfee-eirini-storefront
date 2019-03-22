@@ -27,7 +27,7 @@ spec:
     spec:
       containers:
       - name: backend-container
-        image: us.icr.io/demo/backend:latest
+        image: <REGISTRY_URL>/<REGISTRY_NAMESPACE>/<IMAGE_NAME>:latest
         # Add the URL directly, tell the user where to get the items for the URL
         imagePullPolicy: Always
         ports:
