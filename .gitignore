@@ -59,3 +59,7 @@ typings/
 
 # next.js build output
 .next
+./demo-frontend/cf
+./demo-backend/cf
+./demo-backend/local.env
+./demo-frontend/local.env

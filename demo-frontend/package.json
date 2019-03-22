@@ -1,0 +1,20 @@
+{
+  "name": "demo-frontend",
+  "version": "1.0.0",
+  "description": "Web store front-end",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "IBM",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4"
+  },
+  "engines": {
+    "node": "~10.12"
+  }
+}

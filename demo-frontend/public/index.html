@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CF Summit Demo</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <!-- Bulma Version 0.7.1-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" />
+  <style type="text/css">
+  </style>
+  <link href="ecommerce.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="app" v-cloak>
+    <nav class="navbar is-link is-fixed-top">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="">
+          SHOP
+        </a>
+        <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <div id="navbarExampleTransparentExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="">
+            Home
+          </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Categories
+            </a>
+            <div class="navbar-dropdown is-boxed">
+              <a class="navbar-item" href="">
+                Nothing here
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="field is-grouped">
+              <p class="control">
+                <a class="button is-info">
+                  <span class="icon">
+                    <i class="fas fa-user"></i>
+                  </span>
+                </a>
+              </p>
+              <p class="control">
+                <a class="button is-white">
+                  <span class="tag is-rounded is-danger">{{ cart.size }}</span>
+                  <span class="icon">
+                    <i class="fas fa-shopping-cart"></i>
+                  </span>
+                  <span>Cart</span>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero is-info">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            CF Summit Demo
+          </h1>
+          <h2 class="subtitle">
+            Cloud Foundry and Kubernetes.
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="products">
+      <div v-if="products.length == 0">
+        No product found
+      </div>
+      <template v-for="(product, index) in products">
+        <div class="product card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="1280x960.png" alt="Placeholder image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-4">{{product.name}}</p>
+                <p class="subtitle is-6">{{product.brand}}</p>
+              </div>
+            </div>
+          </div>
+          <footer class="card-footer">
+            <span class="card-footer-item">${{product.price}}</span>
+            <button v-on:click="cart.size += 1" class="card-footer-item button is-white">
+              <i class="fas fa-cart-plus"></i>
+            </button>
+          </footer>
+        </div>
+      </template>
+    </section>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="ecommerce.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+</body>
+
+</html>
