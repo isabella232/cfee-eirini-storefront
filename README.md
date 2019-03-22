@@ -9,7 +9,12 @@ A frontend Node.js shopping cart app is talking to the backend Cobol app to fetc
 
 ![Architecture](./MD-images/Architecture.png)
 
-Steps involved:
+1. User connects to the app to view the Storefront site. 
+2. The Storefront frontend fetch the cart products from backend Cobol service. 
+
+## Deploy the apps
+
+Steps required:
 
 1. Deploy the [backend COBOL app](https://github.com/IBM-Cloud/cfee-eirini-storefront/tree/master/backend).
 1. Deploy the [frontend Node.js app](https://github.com/IBM-Cloud/cfee-eirini-storefront/tree/master/frontend).
