@@ -59,7 +59,5 @@ typings/
 
 # next.js build output
 .next
-./frontend/cf
-./backend/cf
-./backend/local.env
-./frontend/local.env
+*.local.env
+*.cf
