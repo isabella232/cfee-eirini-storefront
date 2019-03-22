@@ -31,7 +31,7 @@ A frontend shopping cart site using Node.js - the app is talking to the backend 
    cf push
    ```
 
-1. Open the running app in your browser. The shopping cart site is running but no products showing. ![](./MD-images/noProducts.png)
+1. Open the running app in your browser. The shopping cart site is running but no products showing. ![](../MD-images/noProducts.png)
 
 # Connect the frontend to the backend
 
@@ -49,7 +49,7 @@ In this section, you will connect the frontend Cloud Foundry app to use the back
    cf restart frontend
    ```
 
-1. Done, now open or refresh the frontend web application in the browser, you should see the products loading been fetched from the backend Kubernetes service. ![](./MD-images/withProducts.png)
+1. Done, now open or refresh the frontend web application in the browser, you should see the products loading been fetched from the backend Kubernetes service. ![](../MD-images/withProducts.png)
 
 # Issues
 

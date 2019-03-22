@@ -5,6 +5,10 @@ This repo consists of a [backend COBOL app](https://github.com/IBM-Cloud/cfee-ei
 
 A frontend Node.js shopping cart app is talking to the backend Cobol app to fetch the shopping cart products.
 
+## Architecture
+
+![Architecture](./MD-images/Architecture.png)
+
 Steps involved:
 
 1. Deploy the [backend COBOL app](https://github.com/IBM-Cloud/cfee-eirini-storefront/tree/master/backend).
