@@ -27,10 +27,6 @@ A backend Cobol service providing a list of products used by the [demo-frontend]
 
 1. Copy template.local.env to local.env
 
-   ```bash
-   cf push
-   ```
-
 1. Set values to match your cluster environment. You can get the details below from the IBM Cloud dashboard under your [cluster](https://cloud.ibm.com/kubernetes/clusters). 
 
    - REGISTRY_URL
