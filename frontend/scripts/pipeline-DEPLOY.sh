@@ -6,5 +6,5 @@ cf auth $CF_LOGIN $CF_PASSWORD
 cf target -o "$CF_ORG" -s "$CF_SPACE"
 
 cf push --no-start
-cf set-env demo-frontend BACKEND_URL http://demo-backend-service.default.svc.cluster.local:8080
-cf start demo-frontend
+cf set-env frontend BACKEND_URL http://backend-service.default.svc.cluster.local:8080
+cf start frontend

@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: demo-backend-service
+  name: backend-service
 spec:
   ports:
   - port: 8080
@@ -9,25 +9,25 @@ spec:
     protocol: TCP
   type: ClusterIP
   selector:
-    app: demo-backend
+    app: backend
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: demo-backend-deployment
+  name: backend-deployment
 spec:
   selector:
     matchLabels:
-      app: demo-backend
+      app: backend
   replicas: 1
   template:
     metadata:
       labels:
-        app: demo-backend
+        app: backend
     spec:
       containers:
-      - name: demo-backend-container
-        image: us.icr.io/demo/demo-backend:latest
+      - name: backend-container
+        image: us.icr.io/demo/backend:latest
         # Add the URL directly, tell the user where to get the items for the URL
         imagePullPolicy: Always
         ports:

@@ -1,7 +1,7 @@
 ---
 applications:
 - instances: 1
-  name: demo-frontend
+  name: frontend
   command: npm start
   memory: 256M
   random-route: true

@@ -1,5 +1,5 @@
-# Eirini demo-backend
-A backend Cobol service providing a list of products used by the [demo-frontend](https://github.com/IBM-Cloud/eirini-demo/tree/master/demo-frontend). 
+# Eirini backend
+A backend Cobol service providing a list of products used by the [frontend](https://github.com/IBM-Cloud/eirini-demo/tree/master/frontend). 
 
 # Deploy the backend app to CFEE
 
@@ -19,10 +19,10 @@ A backend Cobol service providing a list of products used by the [demo-frontend]
    git clone https://github.com/IBM-Cloud/eirini-demo
    ```
 
-1. cd into the `demo-backend` app.
+1. cd into the `backend` app.
 
    ```bash
-   cd demo-backend
+   cd backend
    ```
 
 1. Copy template.local.env to local.env
@@ -50,7 +50,7 @@ A backend Cobol service providing a list of products used by the [demo-frontend]
 
 1. Deploy to your cluster.
 
-1. Done, next deploy the [demo-frontend](https://github.com/IBM-Cloud/eirini-demo/tree/master/demo-frontend). 
+1. Done, next deploy the [frontend](https://github.com/IBM-Cloud/eirini-demo/tree/master/frontend). 
 
 # Issues
 

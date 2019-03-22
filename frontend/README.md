@@ -1,4 +1,4 @@
-# Eirini demo-frontend
+# Eirini frontend
 A frontend shopping cart site using Node.js - the app is talking to the backend to fetch the shopping cart products. If the connection with the backend Cobol app is not set then no products will be displayed. 
 
 # Deploy the app to CFEE
@@ -19,13 +19,13 @@ A frontend shopping cart site using Node.js - the app is talking to the backend 
    git clone https://github.com/IBM-Cloud/eirini-demo
    ```
 
-1. cd into the `demo-frontend` app.
+1. cd into the `frontend` app.
 
    ```bash
-   cd demo-frontend
+   cd frontend
    ```
 
-1. Push the **demo-frontend** app to CFEE.
+1. Push the **frontend** app to CFEE.
 
    ```bash
    cf push
@@ -35,18 +35,18 @@ A frontend shopping cart site using Node.js - the app is talking to the backend 
 
 # Connect the frontend to the backend
 
-In this section, you will connect the frontend Cloud Foundry app to use the backend Kubernetes service. You must have deployed the [demo-backend](https://github.com/IBM-Cloud/eirini-demo/tree/master/demo-backend) before the steps below. 
+In this section, you will connect the frontend Cloud Foundry app to use the backend Kubernetes service. You must have deployed the [backend](https://github.com/IBM-Cloud/eirini-demo/tree/master/backend) before the steps below. 
 
 1. Set the frontend env to use the backend service.
 
    ```bash
-   cf set-env demo-frontend BACKEND_URL http://demo-backend-service.default.svc.cluster.local:8080
+   cf set-env frontend BACKEND_URL http://backend-service.default.svc.cluster.local:8080
    ```
 
 1. Restart the frontend app.
 
    ```bash
-   cf restart demo-frontend
+   cf restart frontend
    ```
 
 1. Done, now open or refresh the frontend web application in the browser, you should see the products loading been fetched from the backend Kubernetes service. ![](./MD-images/withProducts.png)
