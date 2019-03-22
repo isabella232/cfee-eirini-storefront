@@ -1,5 +1,5 @@
 # Eirini demo-backend
-A backend Cobol service providing a list of products used by the [demo-frontend](https://github.com/IBM-Cloud/eirini-demo/demo-frontend). 
+A backend Cobol service providing a list of products used by the [demo-frontend](https://github.com/IBM-Cloud/eirini-demo/tree/master/demo-frontend). 
 
 # Deploy the backend app to CFEE
 
@@ -54,7 +54,7 @@ A backend Cobol service providing a list of products used by the [demo-frontend]
 
 1. Deploy to your cluster.
 
-1. Done, next deploy the [demo-frontend](https://github.com/IBM-Cloud/eirini-demo/demo-frontend). 
+1. Done, next deploy the [demo-frontend](https://github.com/IBM-Cloud/eirini-demo/tree/master/demo-frontend). 
 
 # Issues
 

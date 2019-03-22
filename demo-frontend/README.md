@@ -35,7 +35,7 @@ A frontend shopping cart site using Node.js - the app is talking to the backend 
 
 # Connect the frontend to the backend
 
-In this section, you will connect the frontend Cloud Foundry app to use the backend Kubernetes service. You must have deployed the [demo-backend](https://github.com/IBM-Cloud/eirini-demo/demo-backend) before the steps below. 
+In this section, you will connect the frontend Cloud Foundry app to use the backend Kubernetes service. You must have deployed the [demo-backend](https://github.com/IBM-Cloud/eirini-demo/tree/master/demo-backend) before the steps below. 
 
 1. Set the frontend env to use the backend service.
 
