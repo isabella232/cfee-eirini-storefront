@@ -28,7 +28,7 @@ A frontend shopping cart site using Node.js - the app is talking to the backend 
 1. Push the **frontend** app to CFEE.
 
    ```bash
-   cf push
+   ibmcloud cf push
    ```
 
 1. Open the running app in your browser. The shopping cart site is running but no products showing. ![](../MD-images/noProducts.png)
@@ -40,13 +40,13 @@ In this section, you will connect the frontend Cloud Foundry app to use the back
 1. Set the frontend env to use the backend service.
 
    ```bash
-   cf set-env frontend BACKEND_URL http://backend-service.default.svc.cluster.local:8080
+   ibmcloud cf set-env frontend BACKEND_URL http://backend-service.default.svc.cluster.local:8080
    ```
 
 1. Restart the frontend app.
 
    ```bash
-   cf restart frontend
+   ibmcloud cf restart frontend
    ```
 
 1. Done, now open or refresh the frontend web application in the browser, you should see the products loading been fetched from the backend Kubernetes service. ![](../MD-images/withProducts.png)

@@ -1,10 +1,12 @@
 #!/bin/bash
 curl -L "https://cli.run.pivotal.io/stable?release=linux64-binary&source=github" | tar -zx
 
-cf api --skip-ssl-validation $CF_API
-cf auth $CF_LOGIN $CF_PASSWORD
-cf target -o "$CF_ORG" -s "$CF_SPACE"
+#
+# login to IBM Cloud using the API key targeting a region and then target CFEE org and space.
+#
+ibmcloud login --apikey "$API_KEY" 
+ibmcloud target --cf-api "$CFFE_API_ENDPOINT" -o "$CFFE_ORG" -s "$CFFE_SPACE"
 
-cf push --no-start
-cf set-env frontend BACKEND_URL http://backend-service.default.svc.cluster.local:8080
-cf start frontend
+ibmcloud cf push --no-start
+ibmcloud cf set-env frontend BACKEND_URL http://backend-service.default.svc.cluster.local:8080
+ibmcloud cf start frontend
