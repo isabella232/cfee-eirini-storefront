@@ -20,3 +20,7 @@ body {
   min-width: 250px;
   margin: 20px;
 }
+
+.product-image {
+  object-fit: cover;
+}
