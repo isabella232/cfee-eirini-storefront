@@ -5,11 +5,11 @@ A backend Cobol service providing a list of products used by the [frontend](http
 
 1.  Use your Kubernetes cluster where your CFEE instance been deployed on.
 
-1. Log in to IBM Cloud, target your Kubernetes cluster. Copy and paste the export command to set the KUBECONFIG environment variable as directed.
+1. Log in to IBM Cloud, target your Kubernetes cluster.
 
    ```bash
    ibmcloud login
-   ibmcloud cs cluster-config cluster-name
+   ibmcloud ks cluster config --cluster <cluster-name>
    ```
 
 
